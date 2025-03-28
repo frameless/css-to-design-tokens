@@ -1,0 +1,106 @@
+{
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": ["opengemeenten"]
+  },
+  "opengemeenten": {
+    "basis": {
+      "form-control": {
+        "background-color": { "$value": "#ffffff" },
+        "border-color": { "$value": "#000000" },
+        "border-width": { "$value": "0.125rem" }
+      }
+    },
+    "utrecht": {
+      "button": {
+        "hover": {
+          "background-color": { "$value": "{utrecht.button.background-color}" },
+          "border-color": { "$value": "{utrecht.button.border-color}" },
+          "color": { "$value": "{utrecht.button.color}" }
+        },
+        "active": {
+          "background-color": { "$value": "{utrecht.button.hover.background-color}" },
+          "border-color": { "$value": "{utrecht.button.hover.border-color}" },
+          "color": { "$value": "{utrecht.button.hover.color}" }
+        },
+        "focus": {
+          "background-color": { "$value": "{utrecht.button.hover.background-color}" },
+          "border-color": { "$value": "{utrecht.button.hover.border-color}" },
+          "color": { "$value": "{utrecht.button.hover.color}" }
+        },
+        "primary-action": {
+          "background-color": { "$value": "{utrecht.button.background-color}" },
+          "border-color": { "$value": "{utrecht.button.border-color}" },
+          "color": { "$value": "{utrecht.button.color}" },
+          "hover": {
+            "background-color": { "$value": "{utrecht.button.primary-action.background-color}" },
+            "border-color": { "$value": "{utrecht.button.primary-action.border-color}" },
+            "color": { "$value": "{utrecht.button.primary-action.color}" }
+          },
+          "active": {
+            "background-color": { "$value": "{utrecht.button.primary-action.hover.background-color}" },
+            "border-color": { "$value": "{utrecht.button.primary-action.hover.border-color}" },
+            "color": { "$value": "{utrecht.button.primary-action.hover.color}" }
+          },
+          "focus": {
+            "background-color": { "$value": "{utrecht.button.primary-action.hover.background-color}" },
+            "border-color": { "$value": "{utrecht.button.primary-action.hover.border-color}" },
+            "color": { "$value": "{utrecht.button.primary-action.hover.color}" }
+          }
+        },
+        "secondary-action": {
+          "hover": {
+            "background-color": { "$value": "{utrecht.button.secondary-action.background-color}" },
+            "border-color": { "$value": "{utrecht.button.secondary-action.border-color}" },
+            "color": { "$value": "{utrecht.button.secondary-action.color}" }
+          },
+          "active": {
+            "background-color": { "$value": "{utrecht.button.secondary-action.hover.background-color}" },
+            "border-color": { "$value": "{utrecht.button.secondary-action.hover.border-color}" },
+            "color": { "$value": "{utrecht.button.secondary-action.hover.color}" }
+          },
+          "focus": {
+            "background-color": { "$value": "{utrecht.button.secondary-action.hover.background-color}" },
+            "border-color": { "$value": "{utrecht.button.secondary-action.hover.border-color}" },
+            "color": { "$value": "{utrecht.button.secondary-action.hover.color}" }
+          }
+        }
+      },
+      "link": {
+        "active": {
+          "color": { "$value": "{utrecht.link.hover.color}" }
+        },
+        "hover": {
+          "text-decoration-thickness": {
+            "$value": "{utrecht.link.text-decoration-thickness}"
+          }
+        },
+        "focus": {
+          "color": { "$value": "{utrecht.link.hover.color}" },
+          "text-decoration-thickness": {
+            "$value": "{utrecht.link.text-decoration-thickness}"
+          }
+        },
+        "focus-visible": {
+          "color": { "$value": "{utrecht.link.hover.color}" },
+          "text-decoration-thickness": {
+            "$value": "{utrecht.link.text-decoration-thickness}"
+          }
+        }
+      },
+      "spotlight-section": {
+        "border-width": { "$value": "0.125rem" },
+        "padding-block-start": { "$value": "1.75rem" },
+        "padding-block-end": { "$value": "2rem" },
+        "padding-inline-start": { "$value": "2rem" },
+        "padding-inline-end": { "$value": "2rem" }
+      },
+      "icon": {
+        "size": { "$value": "1em", "$comment": "https://github.com/nl-design-system/utrecht/issues/2794" }
+      },
+      "toptask-link": {
+        "min-block-size": { "$value": "100%" }
+      }
+    }
+  }
+}

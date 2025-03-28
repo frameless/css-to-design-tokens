@@ -1,0 +1,44 @@
+{
+  "my-theme/button/primary-action-button/option-1": {
+    "utrecht": {
+      "button": {
+        "primary-action": {
+          "background-color": { "$value": "{basis.color.primary.interactive-1}" },
+          "border-color": { "$value": "{basis.color.primary.border-2}" },
+          "color": { "$value": "{basis.color.primary.text-2}" },
+          "hover": {
+            "background-color": { "$value": "{basis.color.primary.interactive-2}" },
+            "border-color": { "$value": "{basis.color.primary.border-3}" },
+            "color": { "$value": "{basis.color.primary.text-2}" }
+          },
+          "active": {
+            "background-color": { "$value": "{basis.color.primary.interactive-3}" },
+            "border-color": { "$value": "{basis.color.primary.border-3}" },
+            "color": { "$value": "{basis.color.primary.text-2}" }
+          }
+        }
+      }
+    }
+  },
+  "my-theme/button/primary-action-button/option-4": {
+    "utrecht": {
+      "button": {
+        "primary-action": {
+          "background-color": { "$value": "{basis.color.primary-inverse.interactive-1}" },
+          "border-color": { "$value": "{basis.color.primary-inverse.border-2}" },
+          "color": { "$value": "{basis.color.primary-inverse.text-2}" },
+          "hover": {
+            "background-color": { "$value": "{basis.color.primary-inverse.interactive-2}" },
+            "border-color": { "$value": "{basis.color.primary-inverse.border-3}" },
+            "color": { "$value": "{basis.color.primary-inverse.text-2}" }
+          },
+          "active": {
+            "background-color": { "$value": "{basis.color.primary-inverse.interactive-3}" },
+            "border-color": { "$value": "{basis.color.primary-inverse.border-3}" },
+            "color": { "$value": "{basis.color.primary-inverse.text-2}" }
+          }
+        }
+      }
+    }
+  }
+}

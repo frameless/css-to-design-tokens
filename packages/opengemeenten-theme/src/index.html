@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="nl" dir="ltr">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin:ital,wght@0,400..700;1,400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-unstable/basis-design-tokens/dist/theme.css" />
+  </head>
+  <body>
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="close" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.38 7.38c.5-.5 1.32-.5 1.82 0l6.81 6.81 6.81-6.81c.5-.5 1.32-.5 1.82 0s.5 1.32 0 1.82l-6.81 6.81 6.81 6.81c.5.5.5 1.32 0 1.82s-1.32.5-1.82 0l-6.81-6.81-6.81 6.81c-.5.5-1.32.5-1.82 0s-.5-1.32 0-1.82l6.81-6.81L7.38 9.2c-.5-.5-.5-1.32 0-1.82Z"
+          style="fill-rule: nonzero"
+        />
+      </symbol>
+      <symbol id="home" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.5294 2L4 12V30H12.2353V18.4706H18.8235V30H27.0588V12L15.5294 2Z" style="fill-rule: nonzero" />
+      </symbol>
+      <symbol id="menu" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m5.25,24h21.5c.69,0,1.25-.56,1.25-1.25h0c0-.69-.56-1.25-1.25-1.25H5.25c-.69,0-1.25.56-1.25,1.25h0c0,.69.56,1.25,1.25,1.25Zm0-6.75h21.5c.69,0,1.25-.56,1.25-1.25h0c0-.69-.56-1.25-1.25-1.25H5.25c-.69,0-1.25.56-1.25,1.25h0c0,.69.56,1.25,1.25,1.25Zm-1.25-8h0c0,.69.56,1.25,1.25,1.25h21.5c.69,0,1.25-.56,1.25-1.25h0c0-.69-.56-1.25-1.25-1.25H5.25c-.69,0-1.25.56-1.25,1.25Z"
+          style="fill-rule: nonzero"
+        />
+      </symbol>
+      <symbol id="reload" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M28.8 16c-.79 0-1.47-.58-1.58-1.38-.86-6.2-6.62-10.55-12.82-9.69-3.12.43-5.9 2.16-7.69 4.67H9.6c.88 0 1.6.72 1.6 1.6s-.72 1.6-1.6 1.6H3.21c-.88 0-1.6-.72-1.6-1.6V4.8c0-.88.72-1.6 1.6-1.6s1.6.72 1.6 1.6v2.05c2.29-2.73 5.55-4.58 9.16-5.08C21.93.67 29.29 6.24 30.4 14.19c.12.88-.49 1.68-1.36 1.8-.07.01-.15.02-.22.02ZM18.04 30.24c3.61-.5 6.87-2.35 9.16-5.08v2.05c0 .88.72 1.6 1.6 1.6s1.6-.72 1.6-1.6v-6.4c0-.88-.72-1.6-1.6-1.6h-6.39c-.88 0-1.6.72-1.6 1.6s.72 1.6 1.6 1.6h2.89a11.394 11.394 0 0 1-7.69 4.67c-6.2.87-11.95-3.48-12.81-9.69-.12-.88-.93-1.49-1.81-1.36-.88.12-1.49.93-1.36 1.8C2.64 25.1 8.9 30.39 16.04 30.39c.66 0 1.34-.05 2.01-.14Z"
+          style="fill-rule: nonzero"
+        />
+      </symbol>
+      <symbol id="search" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m13.6,6.4c-3.98,0-7.2,3.23-7.2,7.2s3.23,7.2,7.2,7.2,7.2-3.23,7.2-7.2-3.23-7.2-7.2-7.2Zm-9.6,7.2c0-5.3,4.3-9.6,9.6-9.6s9.6,4.3,9.6,9.6c0,2.22-.75,4.26-2.02,5.89l6.47,6.47c.47.47.47,1.23,0,1.7-.47.47-1.23.47-1.7,0l-6.47-6.47c-1.68,1.31-3.76,2.02-5.89,2.02-5.3,0-9.6-4.3-9.6-9.6Z"
+          style="fill-rule: nonzero"
+        />
+      </symbol>
+      <symbol id="settings" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12.94 15.97c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8Zm0-13c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5ZM13.51 19.03H8.16C3.66 19.03 0 22.69 0 27.2v3.33c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V27.2c0-2.85 2.32-5.17 5.17-5.17h5.35c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5ZM31.25 26.19l-1.46-.84c.1-.42.17-.86.17-1.31s-.06-.89-.17-1.31l1.45-.84c.72-.41.97-1.33.55-2.05s-1.33-.96-2.05-.55l-1.46.84a5.608 5.608 0 0 0-2.21-1.3v-1.3c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v1.26c-.9.24-1.71.71-2.37 1.34l-1.46-.84c-.72-.42-1.64-.16-2.05.55-.41.72-.16 1.64.55 2.05l1.45.83c-.11.42-.17.86-.17 1.31s.06.89.17 1.31l-1.45.84a1.502 1.502 0 0 0 1.5 2.6l1.46-.84c.65.63 1.46 1.1 2.37 1.34v1.24c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-1.29c.84-.25 1.59-.71 2.21-1.3l1.46.84a1.502 1.502 0 0 0 2.05-.55c.41-.72.16-1.63-.55-2.05Zm-6.75.29c-1.36 0-2.46-1.09-2.46-2.44s1.1-2.44 2.46-2.44 2.46 1.09 2.46 2.44-1.1 2.44-2.46 2.44Z"
+          style="fill-rule: nonzero"
+        />
+      </symbol>
+      <symbol id="swipe" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M27.816,15.943C27.694,15.943 27.386,15.985 27.069,16.083C26.988,15.005 26.084,14.152 24.985,14.152C24.484,14.152 24.023,14.329 23.663,14.625C23.368,13.827 22.6,13.257 21.702,13.257C21.179,13.257 20.641,13.417 20.209,13.726L20.209,8.331C20.209,6.992 19.427,6.092 18.263,6.092C17.093,6.092 16.244,7.034 16.244,8.332L16.272,20.941L14.553,19.136C14.09,18.673 13.478,18.418 12.83,18.418C12.182,18.418 11.569,18.673 11.107,19.136C10.151,20.092 10.149,21.647 11.086,22.582C11.101,22.6 12.659,24.336 14.88,26.558L15.242,26.921C17.348,29.039 19.168,30.868 22.809,30.868C26.579,30.868 27.84,28.976 28.809,27.039C29.741,25.175 29.751,18.037 29.751,17.734C29.751,16.78 28.847,15.943 27.816,15.943ZM28.007,26.638C27.095,28.462 26.074,29.973 22.808,29.973C19.54,29.973 17.923,28.348 15.876,26.289L15.513,25.925C13.31,23.722 11.767,22.002 11.735,21.967C11.443,21.677 11.28,21.281 11.282,20.869C11.282,20.456 11.447,20.06 11.74,19.769C12.027,19.478 12.42,19.314 12.829,19.314C13.235,19.314 13.624,19.475 13.911,19.761L16.398,22.371C16.482,22.46 16.6,22.51 16.723,22.51C16.968,22.51 17.17,22.308 17.17,22.063C17.17,22.062 17.17,22.061 17.17,22.06L17.139,8.33C17.139,7.711 17.433,6.987 18.262,6.987C19.238,6.987 19.313,8.015 19.313,8.33L19.313,16.689C19.313,16.934 19.515,17.136 19.761,17.136C20.007,17.136 20.209,16.934 20.209,16.689L20.209,15.494C20.209,14.509 21.101,14.151 21.701,14.151C22.36,14.151 22.895,14.687 22.895,15.345L22.895,16.987C22.895,17.233 23.097,17.435 23.343,17.435C23.589,17.435 23.791,17.233 23.791,16.987L23.791,16.241C23.791,15.582 24.326,15.047 24.985,15.047C25.643,15.047 26.179,15.582 26.179,16.241L26.179,18.181C26.179,18.427 26.381,18.629 26.627,18.629C26.872,18.629 27.074,18.427 27.074,18.181L27.074,17.041C27.253,16.954 27.605,16.838 27.815,16.838C28.35,16.838 28.855,17.273 28.855,17.733C28.855,19.739 28.702,25.247 28.007,26.638L28.007,26.638ZM14.687,5.831C14.687,5.533 14.388,5.234 14.09,5.234L5.284,5.234L5.284,4.301C5.284,4.121 5.1,3.957 4.933,3.888C4.765,3.818 4.498,3.857 4.37,3.985L2.896,5.644C2.721,5.82 2.721,6.067 2.896,6.241L4.37,7.902C4.498,8.03 4.765,8.068 4.933,7.999C5.1,7.929 5.284,7.766 5.284,7.585L5.284,6.428L14.09,6.428C14.388,6.428 14.687,6.13 14.687,5.831ZM6.627,3.443L15.731,3.443L15.731,4.6C15.731,4.781 15.766,4.944 15.933,5.014C16.101,5.083 16.219,5.045 16.347,4.917L18.12,3.257C18.294,3.082 18.294,2.835 18.12,2.66L16.347,1C16.219,0.871 16.101,0.833 15.933,0.903C15.766,0.972 15.731,1.135 15.731,1.316L15.731,2.249L6.627,2.249C6.329,2.249 6.03,2.548 6.03,2.846C6.03,3.145 6.329,3.443 6.627,3.443Z"
+          style="fill-rule: nonzero"
+        />
+      </symbol>
+      <symbol id="trash" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M11.2 6.4A2.4 2.4 0 0 1 13.6 4h4.8a2.4 2.4 0 0 1 2.4 2.4v2.4H25.6a1.2 1.2 0 1 1 0 2.4h-.096L24.4 24.455A3.6 3.6 0 0 1 20.8 28h-9.6a3.6 3.6 0 0 1-3.6-3.545L6.496 11.2H6.4a1.2 1.2 0 1 1 0-2.4h4.8V6.4Zm-2.296 4.8 1.092 13.1c.003.034.004.067.004.1a1.2 1.2 0 0 0 1.2 1.2h9.6a1.2 1.2 0 0 0 1.2-1.2c0-.033.001-.066.004-.1l1.092-13.1H8.904ZM18.4 8.8h-4.8V6.4h4.8v2.4Zm-4.8 4.8a1.2 1.2 0 0 1 1.2 1.2V22a1.2 1.2 0 1 1-2.4 0v-7.2a1.2 1.2 0 0 1 1.2-1.2Zm4.8 0a1.2 1.2 0 0 1 1.2 1.2V22a1.2 1.2 0 1 1-2.4 0v-7.2a1.2 1.2 0 0 1 1.2-1.2Z"
+        />
+      </symbol>
+    </svg>
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="email" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0 8c0-2.65 2.15-4.8 4.8-4.8h22.4C29.85 3.2 32 5.35 32 8v16c0 2.65-2.15 4.8-4.8 4.8H4.8C2.15 28.8 0 26.65 0 24V8Zm3.38-.74L16 15.67l12.62-8.41c-.27-.51-.8-.86-1.42-.86H4.8c-.62 0-1.15.35-1.42.86Zm25.42 3.73-11.91 7.94c-.54.36-1.24.36-1.78 0L3.2 10.99V24c0 .88.72 1.6 1.6 1.6h22.4c.88 0 1.6-.72 1.6-1.6V10.99Z"
+          style="fill-rule: nonzero"
+        />
+      </symbol>
+      <symbol id="telephone" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m30.19 18.51-8-3.2c-.73-.29-1.56-.01-1.97.66l-1.61 2.68a16.054 16.054 0 0 1-5.28-5.28l2.68-1.61c.67-.4.95-1.24.66-1.97l-3.18-7.98C13.25 1.2 12.66.8 12 .8H5.6C2.95.8.8 2.95.8 5.6v.1c.83 13.72 11.78 24.67 25.5 25.5h.1c2.65 0 4.8-2.15 4.8-4.8V20c0-.65-.4-1.24-1.01-1.49ZM28 26.4c0 .87-.69 1.58-1.56 1.6C14.38 27.24 4.76 17.62 4 5.56 4.02 4.7 4.73 4 5.6 4h5.32l2.29 5.73-2.83 1.7c-.71.43-.98 1.33-.61 2.08 1.87 3.79 4.94 6.86 8.73 8.73.75.37 1.65.1 2.08-.61l1.7-2.83 5.73 2.29v5.32Z"
+          style="fill-rule: nonzero"
+        />
+      </symbol>
+      <symbol id="url" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20.8 4.8c-.88 0-1.6-.72-1.6-1.6s.72-1.6 1.6-1.6h8c.88 0 1.6.72 1.6 1.6v8c0 .88-.72 1.6-1.6 1.6s-1.6-.72-1.6-1.6V7.06L13.93 20.33c-.62.62-1.64.62-2.26 0-.62-.62-.62-1.64 0-2.26L24.94 4.8H20.8ZM1.6 11.2c0-2.65 2.15-4.8 4.8-4.8h8c.88 0 1.6.72 1.6 1.6s-.72 1.6-1.6 1.6h-8c-.88 0-1.6.72-1.6 1.6v14.4c0 .88.72 1.6 1.6 1.6h14.4c.88 0 1.6-.72 1.6-1.6v-8c0-.88.72-1.6 1.6-1.6s1.6.72 1.6 1.6v8c0 2.65-2.15 4.8-4.8 4.8H6.4c-2.65 0-4.8-2.15-4.8-4.8V11.2Z"
+          style="fill-rule: nonzero"
+        />
+      </symbol>
+      <symbol id="whatsapp" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M29.08 6.78C24-.43 14-2.16 6.79 2.92c-6.96 4.9-8.82 14.39-4.37 21.53l-2.3 5.28c-.23.54-.15 1.17.21 1.63.37.46.96.69 1.54.58l7.58-1.35a16.002 16.002 0 0 0 15.76-1.52c3.49-2.46 5.82-6.14 6.55-10.35s-.22-8.45-2.68-11.95Zm-.47 11.4c-.58 3.37-2.45 6.31-5.24 8.28a12.79 12.79 0 0 1-13 1.03 1.56 1.56 0 0 0-.7-.16c-.09 0-.19 0-.28.03l-5.14.92 1.45-3.34c.22-.51.16-1.1-.16-1.56C1.48 17.61 2.86 9.61 8.63 5.54 14.4 1.48 22.4 2.86 26.47 8.63c1.97 2.8 2.73 6.19 2.15 9.56Zm-5.42 1.79c0 1.32-1.08 2.4-2.4 2.4h-1.6c-5.29 0-9.6-4.31-9.6-9.6v-1.6c0-1.32 1.08-2.4 2.4-2.4s2.4 1.08 2.4 2.4v1.6c0 .9-.5 1.69-1.25 2.1.64 1.84 2.1 3.3 3.94 3.94.41-.74 1.2-1.25 2.1-1.25h1.6c1.32 0 2.4 1.08 2.4 2.4Z"
+          style="fill-rule: nonzero"
+        />
+      </symbol>
+    </svg>
+    <script type="module" defer>
+      import { defineCustomElements } from 'https://unpkg.com/@utrecht/web-component-library-stencil@3.4.0/dist/esm/loader.js';
+      import { defineUtrechtBreadcrumbNav } from './utrecht-breadcrumb-nav.js';
+      import './example-text-block.js';
+      import './example-screenreader-only.js';
+
+      defineUtrechtBreadcrumbNav();
+      defineCustomElements();
+      const themes = [
+        { prefix: 'lenteveld', tokensFile: 'www.lenteveld.nl', url: 'https://www.lenteveld.nl' },
+        { prefix: 'barneveld', tokensFile: 'www.barneveld.nl', url: 'https://www.barneveld.nl' },
+        { prefix: 'bergen', tokensFile: 'www.bergen-nh.nl', url: 'https://www.bergen-nh.nl' },
+        { prefix: 'bloemendaal', tokensFile: 'www.bloemendaal.nl', url: 'https://www.bloemendaal.nl' },
+        { prefix: 'bunnik', tokensFile: 'www.bunnik.nl', url: 'https://www.bunnik.nl' },
+        { prefix: 'castricum', tokensFile: 'www.castricum.nl', url: 'https://www.castricum.nl' },
+        { prefix: 'debilt', tokensFile: 'www.debilt.nl', url: 'https://www.debilt.nl' },
+        { prefix: 'dijkenwaard', tokensFile: 'www.dijkenwaard.nl', url: 'https://www.dijkenwaard.nl' },
+        { prefix: 'ede', tokensFile: 'www.ede.nl', url: 'https://www.ede.nl' },
+        { prefix: 'ermelo', tokensFile: 'www.ermelo.nl', url: 'https://www.ermelo.nl' },
+        { prefix: 'harderwijk', tokensFile: 'www.harderwijk.nl', url: 'https://www.harderwijk.nl' },
+        { prefix: 'heemskerk', tokensFile: 'www.heemskerk.nl', url: 'https://www.heemskerk.nl' },
+        { prefix: 'heemstede', tokensFile: 'www.heemstede.nl', url: 'https://www.heemstede.nl' },
+        { prefix: 'heiloo', tokensFile: 'www.heiloo.nl', url: 'https://www.heiloo.nl' },
+        { prefix: 'houten', tokensFile: 'www.houten.nl', url: 'https://www.houten.nl' },
+        { prefix: 'heusden', tokensFile: 'www.heusden.nl', url: 'https://www.heusden.nl' },
+        { prefix: 'katwijk', tokensFile: 'www.katwijk.nl', url: 'https://www.katwijk.nl' },
+        { prefix: 'medemblik', tokensFile: 'www.medemblik.nl', url: 'https://www.medemblik.nl' },
+        { prefix: 'nieuwegein', tokensFile: 'www.nieuwegein.nl', url: 'https://www.nieuwegein.nl' },
+        { prefix: 'nissewaard', tokensFile: 'www.nissewaard.nl', url: 'https://www.nissewaard.nl' },
+        { prefix: 'rhenen', tokensFile: 'www.rhenen.nl', url: 'https://www.rhenen.nl' },
+        { prefix: 'schouwen', tokensFile: 'www.schouwen-duiveland.nl', url: 'https://www.schouwen-duiveland.nl' },
+        { prefix: 'soest', tokensFile: 'www.soest.nl', url: 'https://www.soest.nl' },
+        { prefix: 'tholen', tokensFile: 'www.tholen.nl', url: 'https://www.tholen.nl' },
+        { prefix: 'uitgeest', tokensFile: 'www.uitgeest.nl', url: 'https://www.uitgeest.nl' },
+        { prefix: 'veenendaal', tokensFile: 'www.veenendaal.nl', url: 'https://www.veenendaal.nl' },
+        { prefix: 'voerendaal', tokensFile: 'www.voerendaal.nl', url: 'https://www.voerendaal.nl' },
+        { prefix: 'gemeentewestland', tokensFile: 'www.gemeentewestland.nl', url: 'https://www.gemeentewestland.nl' },
+        { prefix: 'wijkbijduurstede', tokensFile: 'www.wijkbijduurstede.nl', url: 'https://www.wijkbijduurstede.nl' },
+        { prefix: 'woudenberg', tokensFile: 'www.woudenberg.nl', url: 'https://www.woudenberg.nl' },
+        { prefix: 'zeewolde', tokensFile: 'www.zeewolde.nl', url: 'https://www.zeewolde.nl' },
+        { prefix: 'zeist', tokensFile: 'www.zeist.nl', url: 'https://www.zeist.nl' },
+      ];
+
+      const table = document.createElement('table');
+      table.insertAdjacentHTML(
+        'beforeend',
+        `<thead>
+        <tr>
+          <th>website</th>
+          <th>Button</th>
+          <th hidden>Button: primary action</th>
+          <th hidden>Button: secondary action</th>
+          <th>Text Input</th>
+          <th>Heading 1</th>
+          <th>Heading 2</th>
+          <th>Heading 3</th>
+          <th>Heading 4</th>
+          <th>Lead Paragraph</th>
+          <th>Paragraph</th>
+        </tr>
+        </thead>`,
+      );
+
+      themes.forEach(({ prefix, tokensFile }) => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = `../dist/${prefix}/theme.css`;
+        document.head.appendChild(link);
+
+        const fragment = `
+        <tr class="${prefix}-theme" style="font-family: var(--basis-typography-font-family-default)">
+          <th><utrecht-link href="https://${tokensFile}" target="demo"><utrecht-url-data>${tokensFile}</utrecht-url-data></utrecht-link></th>
+          <td>
+            <utrecht-button>Click me</utrecht-button>
+          </td>
+          <td>
+            <utrecht-button-link href="https://${tokensFile}" target="demo">Bezoek ${tokensFile}</utrecht-button-link>
+          </td>
+          <td hidden>
+            <utrecht-button-link appearance="primary-action-button" href="https://${tokensFile}" target="demo">Bezoek ${tokensFile}</utrecht-button-link>
+          </td>
+          <td hidden>
+            <utrecht-button-link appearance="secondary-action-button" href="https://${tokensFile}" target="demo">Bezoek ${tokensFile}</utrecht-button-link>
+          </td>
+          <td>
+            <div style="min-inline-size: 200px"><utrecht-textbox value="Hello world" placeholder="Vul iets in..."></utrecht-textbox></div>
+          </td>
+          <td>
+            <utrecht-heading level="1">The Quick Brown Fox ...</utrecht-heading>
+          </td>
+          <td>
+            <utrecht-heading level="2">The Quick Brown Fox ...</utrecht-heading>
+          </td>
+          <td>
+            <utrecht-heading level="3">The Quick Brown Fox ...</utrecht-heading>
+          </td>
+          <td>
+            <utrecht-heading level="4">The Quick Brown Fox ...</utrecht-heading>
+          </td>
+          <td>
+            <utrecht-paragraph lead>The Quick Brown Fox ...</utrecht-paragraph>
+          </td>
+          <td>
+            <utrecht-paragraph>The Quick Brown Fox ...</utrecht-paragraph>
+          </td>
+          <td>
+            <utrecht-spotlight-section style="zoom: 20%">The Quick Brown Fox ...</utrecht-spotlight-section>
+          </td>
+          <td>
+            <utrecht-spotlight-section appearance="info" style="zoom: 20%">The Quick Brown Fox ...</utrecht-spotlight-section>
+          </td>
+          <td>
+            <utrecht-spotlight-section appearance="success" style="zoom: 20%">The Quick Brown Fox ...</utrecht-spotlight-section>
+          </td>
+          <td>
+            <utrecht-spotlight-section appearance="warning" style="zoom: 20%">The Quick Brown Fox ...</utrecht-spotlight-section>
+          </td>
+          <td>
+            <utrecht-spotlight-section appearance="error" style="zoom: 20%">The Quick Brown Fox ...</utrecht-spotlight-section>
+          </td>
+          <td>
+            <utrecht-page-header style="zoom: 20%">The Quick Brown Fox ...</utrecht-page-header>
+          </td>
+          <td>
+            <utrecht-page-footer style="zoom: 20%">The Quick Brown Fox ...</utrecht-page-footer>
+          </td>
+        </tr>`;
+        table.insertAdjacentHTML('beforeend', fragment);
+      });
+
+      document.getElementById('table').appendChild(table);
+
+      themes.forEach(({ prefix, tokensFile, url }) => {
+        document.getElementById('demo-screen-list').insertAdjacentHTML(
+          'beforeend',
+          `<h2>${prefix}</h2>
+        <div class="${prefix}-theme demo-screen">
+          <example-brand-docs></example-brand-docs>
+        </div>
+          <div class="${prefix}-theme demo-screen">
+          <demo-page>
+            <span slot="page-header"><a href="${url}">${prefix}</a></span>
+            <span slot="page-footer">© 2025 gemeente ${prefix}</span>
+          </demo-page>
+        </div>
+        <div class="${prefix}-theme demo-screen">
+        <demo-homepage>
+          <span slot="page-header"><a href="${url}">${prefix}</a></span>
+          <span slot="page-footer">© 2025 gemeente ${prefix}</span>
+        </demo-homepage>
+        </div>
+        <div class="${prefix}-theme demo-screen">
+        <demo-form>
+          <span slot="page-header"><a href="${url}">${prefix}</a></span>
+          <span slot="page-footer">© 2025 gemeente ${prefix}</span>
+        </demo-form>
+      </div>`,
+        );
+      });
+    </script>
+    <script type="module" src="./demo-page.js"></script>
+    <script type="module" src="./demo-homepage.js"></script>
+    <script type="module" src="./demo-form.js"></script>
+    <script type="module" src="./example-brand-docs.js"></script>
+    <script type="module" src="./example-color-sample-figure.js"></script>
+    <table>
+      <tbody id="table-rows"></tbody>
+    </table>
+    <div id="table"></div>
+    <div class="demo-screen-list" id="demo-screen-list"></div>
+    <style>
+      td,
+      th {
+        padding: 0.5em;
+        text-align: start;
+      }
+      td > *,
+      th > * {
+        white-space: pre;
+      }
+      .demo-screen-list {
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+      }
+      .demo-screen {
+        position: relative;
+        max-inline-size: 1280px;
+        max-block-size: 1024px;
+        min-block-size: 1024px;
+        outline: 1px solid black;
+        overflow-block: auto;
+        /* zoom: 50%; */
+      }
+    </style>
+    <!-- TODO: Include missing fonts: Exo, Maax, Georgia, Circular Std, Open Sans Condensed, Netto Pro, MuseoSans -->
+  </body>
+</html>

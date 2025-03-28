@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://unpkg.com/@nl-design-system-unstable/basis-design-tokens/dist/variables.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="element"></div>
+    <script type="module">
+      import { defineUtrechtParagraph } from './utrecht-paragraph.mjs';
+      import { defineUtrechtUnorderedList } from './utrecht-unordered-list.mjs';
+      import { defineUtrechtUnorderedListItem } from './utrecht-unordered-list-item.mjs';
+      import { defineUtrechtOrderedList } from './utrecht-ordered-list.mjs';
+      import { defineUtrechtOrderedListItem } from './utrecht-ordered-list-item.mjs';
+      import { defineUtrechtHeading } from './utrecht-heading.mjs';
+      import { defineExampleEditorElement } from './example-editor.js';
+      defineExampleEditorElement();
+      defineUtrechtParagraph();
+      defineUtrechtHeading();
+      defineUtrechtUnorderedList();
+      defineUtrechtUnorderedListItem();
+      defineUtrechtOrderedList();
+      defineUtrechtOrderedListItem();
+    </script>
+    <example-editor>
+      <template>
+        <utrecht-heading level="1">Heading</utrecht-heading>
+        <utrecht-heading level="2">Heading</utrecht-heading>
+        <utrecht-heading level="3">Heading</utrecht-heading>
+        <utrecht-heading level="4">Heading</utrecht-heading>
+        <utrecht-heading level="5">Heading</utrecht-heading>
+        <utrecht-heading level="6">Heading</utrecht-heading>
+        <utrecht-paragraph>Edit me!</utrecht-paragraph>
+        <utrecht-paragraph>&nbsp;</utrecht-paragraph
+        ><!-- empty paragraph, oh no! -->
+        <utrecht-paragraph>- fake list item</utrecht-paragraph>
+        <utrecht-paragraph>- fake list item</utrecht-paragraph>
+        <utrecht-paragraph>- fake list item</utrecht-paragraph>
+        <utrecht-paragraph>- fake list item</utrecht-paragraph>
+        <utrecht-heading level="2">Unordered List example</utrecht-heading>
+        <utrecht-unordered-list>
+          <utrecht-unordered-list-item
+            ><utrecht-paragraph>actual list item</utrecht-paragraph></utrecht-unordered-list-item
+          >
+          <utrecht-unordered-list-item
+            ><utrecht-paragraph>actual list item</utrecht-paragraph></utrecht-unordered-list-item
+          >
+          <utrecht-unordered-list-item
+            ><utrecht-paragraph>actual list item</utrecht-paragraph></utrecht-unordered-list-item
+          >
+        </utrecht-unordered-list>
+        <utrecht-heading level="2">Ordered List example</utrecht-heading>
+        <utrecht-ordered-list>
+          <utrecht-ordered-list-item><utrecht-paragraph>actual list item</utrecht-paragraph></utrecht-ordered-list-item>
+          <utrecht-ordered-list-item><utrecht-paragraph>actual list item</utrecht-paragraph></utrecht-ordered-list-item>
+          <utrecht-ordered-list-item><utrecht-paragraph>actual list item</utrecht-paragraph></utrecht-ordered-list-item>
+        </utrecht-ordered-list>
+      </template>
+    </example-editor>
+  </body>
+</html>

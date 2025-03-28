@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" class="utrecht-root basis-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Form - Theme Builder</title>
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fira Sans -->
+    <!-- https://fonts.google.com/share?selection.family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700|Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900|Inclusive+Sans:ital,wght@0,300..700;1,300..700|Lexend:wght@100..900|Noto+Sans:ital,wght@0,100..900;1,100..900|Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800|Public+Sans:ital,wght@0,100..900;1,100..900|Source+Sans+3:ital,wght@0,200..900;1,200..900|Varta:wght@300..700|Work+Sans:ital,wght@0,100..900;1,100..900 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Varta:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="utrecht-body">
+    <div id="app" class="utrecht-page-layout">
+      <utrecht-page-header>
+        <utrecht-paragraph>Hello world</utrecht-paragraph>
+      </utrecht-page-header>
+      <utrecht-page-body>
+        <div class="column-gap-xl">
+          <utrecht-button-group>
+            <utrecht-link href="/#" className="voorbeeld-back-link">
+              <utrecht-icon>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="tabler-icon tabler-icon-arrow-left"
+                >
+                  <path d="M5 12l14 0"></path>
+                  <path d="M5 12l6 6"></path>
+                  <path d="M5 12l6 -6"></path>
+                </svg>
+              </utrecht-icon>
+              Terug
+            </utrecht-link></utrecht-button-group
+          >
+          <utrecht-heading-1>Vraag aan de gemeente</utrecht-heading-1>
+          <utrecht-heading-group>
+            <utrecht-pre-heading>Stap 2 van 4</utrecht-pre-heading>
+            <utrecht-heading-2>Uw gegevens</utrecht-heading-2>
+          </utrecht-heading-group>
+          <utrecht-paragraph>
+            Om u zo goed mogelijk te kunnen helpen, ontvangen we graag uw contactgegevens. Deze gegevens worden niet met
+            anderen gedeeld.
+          </utrecht-paragraph>
+          <utrecht-form-field-textbox
+            label="Naam"
+            id="nameField"
+            autoComplete="name"
+            required
+            value="Anne Klap"
+          ></utrecht-form-field-textbox>
+          <utrecht-form-field-textbox
+            label="Straat"
+            id="streetField"
+            autoComplete="street-address"
+            required
+            value="Laan de voorbeelden"
+          ></utrecht-form-field-textbox>
+          <utrecht-form-field-textbox
+            label="Huisnummer"
+            id="houseField"
+            required
+            value="42"
+          ></utrecht-form-field-textbox>
+          <utrecht-form-field-textbox
+            label="Toevoeging"
+            id="houseAdditionField"
+            description="Niet verplicht."
+            value="Q"
+          ></utrecht-form-field-textbox>
+          <utrecht-form-field-textbox
+            label="Postcode"
+            id="postcodeField"
+            autoComplete="postal-code"
+            required
+            value="0042 QA"
+          ></utrecht-form-field-textbox>
+          <utrecht-form-field-textbox
+            label="Woonplaats"
+            id="placeField"
+            required
+            value="Lenteveld"
+          ></utrecht-form-field-textbox>
+          <utrecht-form-field-textbox
+            label="E-mailadres"
+            id="emailField"
+            autoComplete="email"
+            type="email"
+            required
+            value="anne@example.com"
+          ></utrecht-form-field-textbox>
+          <utrecht-form-field-textbox
+            label="Telefoonnummer"
+            id="phoneField"
+            description="Niet verplicht."
+            autoComplete="tel"
+            type="tel"
+            value="06 0000 0042"
+          ></utrecht-form-field-textbox>
+          <utrecht-button-group direction="column">
+            <utrecht-button type="submit" className="voorbeeld-button-spacing" appearance="primary-action-button">
+              Volgende stap
+            </utrecht-button>
+            <utrecht-link-button inline className="voorbeeld-button-link">
+              Opslaan en later verder
+            </utrecht-link-button>
+            <utrecht-link-button inline className="voorbeeld-button-link"> Stoppen met formulier </utrecht-link-button>
+          </utrecht-button-group>
+        </div>
+      </utrecht-page-body>
+      <utrecht-page-footer>
+        <utrecht-paragraph>Hello world</utrecht-paragraph>
+      </utrecht-page-footer>
+    </div>
+    <script type="module" src="/src/form.ts"></script>
+  </body>
+</html>

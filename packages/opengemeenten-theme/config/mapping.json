@@ -1,0 +1,1338 @@
+[
+  {
+    "name": "basis.border-radius.md",
+    "selector": ":root",
+    "property": "--root-border-radius"
+  },
+  {
+    "name": "basis.border-width.md",
+    "selector": ":root",
+    "property": "--root-border-width"
+  },
+  { "name": "og.color.transformation.dark", "selector": ":root", "property": "--darkTransformation" },
+  { "name": "og.color.transformation.darkest", "selector": ":root", "property": "--darkestTransformation" },
+  { "name": "og.color.transformation.light", "selector": ":root", "property": "--lightTransformation" },
+  { "name": "og.color.transformation.lightest", "selector": ":root", "property": "--lightestTransformation" },
+  { "name": "og.color.primary.default", "selector": ":root", "property": "--root-color--primary" },
+  { "name": "og.color.primary-dark", "selector": ":root", "property": "--root-color--primary-dark" },
+  { "name": "og.color.primary-darkest", "selector": ":root", "property": "--root-color--primary-darkest" },
+  { "name": "og.color.primary-light", "selector": ":root", "property": "--root-color--primary-light" },
+  { "name": "og.color.primary-lightest", "selector": ":root", "property": "--root-color--primary-lightest" },
+  { "name": "og.color.primary.hue", "selector": ":root", "property": "--root-color--primary-hue" },
+  { "name": "og.color.primary.saturation", "selector": ":root", "property": "--root-color--primary-saturation" },
+  { "name": "og.color.primary.lightness", "selector": ":root", "property": "--root-color--primary-lightness" },
+  {
+    "name": "og.color.primary.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color--primary-lightness-dark"
+  },
+  {
+    "name": "og.color.primary.lightness-darkest",
+    "selector": ":root",
+    "property": "--root-color--primary-lightness-darkest"
+  },
+  {
+    "name": "og.color.primary.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--primary-lightness-light"
+  },
+  {
+    "name": "og.color.primary.lightness-lightest",
+    "selector": ":root",
+    "property": "--root-color--primary-lightness-lightest"
+  },
+  { "name": "og.color.secondary.default", "selector": ":root", "property": "--root-color--secondary" },
+  { "name": "og.color.secondary-dark", "selector": ":root", "property": "--root-color--secondary-dark" },
+  { "name": "og.color.secondary-darkest", "selector": ":root", "property": "--root-color--secondary-darkest" },
+  { "name": "og.color.secondary-light", "selector": ":root", "property": "--root-color--secondary-light" },
+  { "name": "og.color.secondary-lightest", "selector": ":root", "property": "--root-color--secondary-lightest" },
+  { "name": "og.color.secondary.hue", "selector": ":root", "property": "--root-color--secondary-hue" },
+  {
+    "name": "og.color.secondary.saturation",
+    "selector": ":root",
+    "property": "--root-color--secondary-saturation"
+  },
+  { "name": "og.color.secondary.lightness", "selector": ":root", "property": "--root-color--secondary-lightness" },
+  {
+    "name": "og.color.secondary.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color--secondary-lightness-dark"
+  },
+  {
+    "name": "og.color.secondary.lightness-darkest",
+    "selector": ":root",
+    "property": "--root-color--secondary-lightness-darkest"
+  },
+  {
+    "name": "og.color.secondary.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--secondary-lightness-light"
+  },
+  {
+    "name": "og.color.secondary.lightness-lightest",
+    "selector": ":root",
+    "property": "--root-color--secondary-lightness-lightest"
+  },
+  { "name": "og.color.support.default", "selector": ":root", "property": "--root-color--support" },
+  { "name": "og.color.support-dark", "selector": ":root", "property": "--root-color--support-dark" },
+  { "name": "og.color.support-darkest", "selector": ":root", "property": "--root-color--support-darkest" },
+  { "name": "og.color.support-light", "selector": ":root", "property": "--root-color--support-light" },
+  { "name": "og.color.support-lightest", "selector": ":root", "property": "--root-color--support-lightest" },
+  { "name": "og.color.support.hue", "selector": ":root", "property": "--root-color--support-hue" },
+  { "name": "og.color.support.saturation", "selector": ":root", "property": "--root-color--support-saturation" },
+  { "name": "og.color.support.lightness", "selector": ":root", "property": "--root-color--support-lightness" },
+  {
+    "name": "og.color.support.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color--support-lightness-dark"
+  },
+  {
+    "name": "og.color.support.lightness-darkest",
+    "selector": ":root",
+    "property": "--root-color--support-lightness-darkest"
+  },
+  {
+    "name": "og.color.support.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--support-lightness-light"
+  },
+  {
+    "name": "og.color.support.lightness-lightest",
+    "selector": ":root",
+    "property": "--root-color--support-lightness-lightest"
+  },
+  { "name": "og.color.contrast.default", "selector": ":root", "property": "--root-color--contrast" },
+  { "name": "og.color.contrast-dark", "selector": ":root", "property": "--root-color--contrast-dark" },
+  { "name": "og.color.contrast-darkest", "selector": ":root", "property": "--root-color--contrast-darkest" },
+  { "name": "og.color.contrast-light", "selector": ":root", "property": "--root-color--contrast-light" },
+  { "name": "og.color.contrast-lightest", "selector": ":root", "property": "--root-color--contrast-lightest" },
+  { "name": "og.color.contrast.hue", "selector": ":root", "property": "--root-color--contrast-hue" },
+  { "name": "og.color.contrast.saturation", "selector": ":root", "property": "--root-color--contrast-saturation" },
+  { "name": "og.color.contrast.lightness", "selector": ":root", "property": "--root-color--contrast-lightness" },
+  {
+    "name": "og.color.contrast.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color--contrast-lightness-dark"
+  },
+  {
+    "name": "og.color.contrast.lightness-darkest",
+    "selector": ":root",
+    "property": "--root-color--contrast-lightness-darkest"
+  },
+  {
+    "name": "og.color.contrast.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--contrast-lightness-light"
+  },
+  {
+    "name": "og.color.contrast.lightness-lightest",
+    "selector": ":root",
+    "property": "--root-color--contrast-lightness-lightest"
+  },
+  { "name": "og.color.grey.default", "selector": ":root", "property": "--root-color--grey" },
+  { "name": "og.color.grey-dark", "selector": ":root", "property": "--root-color--grey-dark" },
+  { "name": "og.color.grey-light", "selector": ":root", "property": "--root-color--grey-light" },
+  { "name": "og.color.grey.hue", "selector": ":root", "property": "--root-color--grey-hue" },
+  { "name": "og.color.grey.saturation", "selector": ":root", "property": "--root-color--grey-saturation" },
+  { "name": "og.color.grey.lightness", "selector": ":root", "property": "--root-color--grey-lightness" },
+  { "name": "og.color.grey.lightness-dark", "selector": ":root", "property": "--root-color--grey-lightness-dark" },
+  {
+    "name": "og.color.grey.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--grey-lightness-light"
+  },
+  { "name": "og.color.white.default", "selector": ":root", "property": "--root-color--white" },
+  { "name": "og.color.white-dark", "selector": ":root", "property": "--root-color--white-dark" },
+  { "name": "og.color.white-light", "selector": ":root", "property": "--root-color--white-light" },
+  { "name": "og.color.white.hue", "selector": ":root", "property": "--root-color--white-hue" },
+  { "name": "og.color.white.saturation", "selector": ":root", "property": "--root-color--white-saturation" },
+  { "name": "og.color.white.lightness", "selector": ":root", "property": "--root-color--white-lightness" },
+  {
+    "name": "og.color.white.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color--white-lightness-dark"
+  },
+  {
+    "name": "og.color.white.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--white-lightness-light"
+  },
+  { "name": "og.color.footer.default", "selector": ":root", "property": "--root-color--footer" },
+  { "name": "og.color.footer-dark", "selector": ":root", "property": "--root-color--footer-dark" },
+  { "name": "og.color.footer-light", "selector": ":root", "property": "--root-color--footer-light" },
+  { "name": "og.color.footer.hue", "selector": ":root", "property": "--root-color--footer-hue" },
+  { "name": "og.color.footer.saturation", "selector": ":root", "property": "--root-color--footer-saturation" },
+  { "name": "og.color.footer.lightness", "selector": ":root", "property": "--root-color--footer-lightness" },
+  {
+    "name": "og.color.footer.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color--footer-lightness-dark"
+  },
+  {
+    "name": "og.color.footer.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--footer-lightness-light"
+  },
+  { "name": "og.color.red.default", "selector": ":root", "property": "--root-color--red" },
+  { "name": "og.color.red-dark", "selector": ":root", "property": "--root-color--red-dark" },
+  { "name": "og.color.red-light", "selector": ":root", "property": "--root-color--red-light" },
+  { "name": "og.color.red.hue", "selector": ":root", "property": "--root-color--red-hue" },
+  { "name": "og.color.red.saturation", "selector": ":root", "property": "--root-color--red-saturation" },
+  { "name": "og.color.red.lightness", "selector": ":root", "property": "--root-color--red-lightness" },
+  { "name": "og.color.red.lightness-dark", "selector": ":root", "property": "--root-color--red-lightness-dark" },
+  {
+    "name": "og.color.red.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--red-lightness-light"
+  },
+  { "name": "og.color.orange.default", "selector": ":root", "property": "--root-color--orange" },
+  { "name": "og.color.orange-dark", "selector": ":root", "property": "--root-color--orange-dark" },
+  { "name": "og.color.orange-light", "selector": ":root", "property": "--root-color--orange-light" },
+  { "name": "og.color.orange.hue", "selector": ":root", "property": "--root-color--orange-hue" },
+  { "name": "og.color.orange.saturation", "selector": ":root", "property": "--root-color--orange-saturation" },
+  { "name": "og.color.orange.lightness", "selector": ":root", "property": "--root-color--orange-lightness" },
+  {
+    "name": "og.color.orange.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color--orange-lightness-dark"
+  },
+  {
+    "name": "og.color.orange.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--orange-lightness-light"
+  },
+  { "name": "og.color.yellow.default", "selector": ":root", "property": "--root-color--yellow" },
+  { "name": "og.color.yellow-dark", "selector": ":root", "property": "--root-color--yellow-dark" },
+  { "name": "og.color.yellow-light", "selector": ":root", "property": "--root-color--yellow-light" },
+  { "name": "og.color.yellow.hue", "selector": ":root", "property": "--root-color--yellow-hue" },
+  { "name": "og.color.yellow.saturation", "selector": ":root", "property": "--root-color--yellow-saturation" },
+  { "name": "og.color.yellow.lightness", "selector": ":root", "property": "--root-color--yellow-lightness" },
+  {
+    "name": "og.color.yellow.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color--yellow-lightness-dark"
+  },
+  {
+    "name": "og.color.yellow.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--yellow-lightness-light"
+  },
+  { "name": "og.color.blue.default", "selector": ":root", "property": "--root-color--blue" },
+  { "name": "og.color.blue-dark", "selector": ":root", "property": "--root-color--blue-dark" },
+  { "name": "og.color.blue-light", "selector": ":root", "property": "--root-color--blue-light" },
+  { "name": "og.color.blue.hue", "selector": ":root", "property": "--root-color--blue-hue" },
+  { "name": "og.color.blue.saturation", "selector": ":root", "property": "--root-color--blue-saturation" },
+  { "name": "og.color.blue.lightness", "selector": ":root", "property": "--root-color--blue-lightness" },
+  { "name": "og.color.blue.lightness-dark", "selector": ":root", "property": "--root-color--blue-lightness-dark" },
+  {
+    "name": "og.color.blue.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--blue-lightness-light"
+  },
+  { "name": "og.color.green.default", "selector": ":root", "property": "--root-color--green" },
+  { "name": "og.color.green-dark", "selector": ":root", "property": "--root-color--green-dark" },
+  { "name": "og.color.green-light", "selector": ":root", "property": "--root-color--green-light" },
+  { "name": "og.color.green.hue", "selector": ":root", "property": "--root-color--green-hue" },
+  { "name": "og.color.green.saturation", "selector": ":root", "property": "--root-color--green-saturation" },
+  { "name": "og.color.green.lightness", "selector": ":root", "property": "--root-color--green-lightness" },
+  {
+    "name": "og.color.green.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color--green-lightness-dark"
+  },
+  {
+    "name": "og.color.green.lightness-light",
+    "selector": ":root",
+    "property": "--root-color--green-lightness-light"
+  },
+  {
+    "name": "og.color.background.transparent",
+    "selector": ":root",
+    "property": "--root-color-background--transparent"
+  },
+  {
+    "name": "og.color.background.primary.hue",
+    "selector": ":root",
+    "property": "--root-color-background--primary-hue"
+  },
+  {
+    "name": "og.color.background.primary.saturation",
+    "selector": ":root",
+    "property": "--root-color-background--primary-saturation"
+  },
+  {
+    "name": "og.color.background.primary.lightness",
+    "selector": ":root",
+    "property": "--root-color-background--primary-lightness"
+  },
+  {
+    "name": "og.color.background.primary.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color-background--primary-lightness-dark"
+  },
+  {
+    "name": "og.color.background.primary.lightness-light",
+    "selector": ":root",
+    "property": "--root-color-background--primary-lightness-light"
+  },
+  {
+    "name": "og.color.background.primary.default",
+    "selector": ":root",
+    "property": "--root-color-background--primary"
+  },
+  {
+    "name": "og.color.background.primary.dark",
+    "selector": ":root",
+    "property": "--root-color-background--primary-dark"
+  },
+  {
+    "name": "og.color.background.primary.light",
+    "selector": ":root",
+    "property": "--root-color-background--primary-light"
+  },
+  {
+    "name": "og.color.background.secondary.hue",
+    "selector": ":root",
+    "property": "--root-color-background--secondary-hue"
+  },
+  {
+    "name": "og.color.background.secondary.saturation",
+    "selector": ":root",
+    "property": "--root-color-background--secondary-saturation"
+  },
+  {
+    "name": "og.color.background.secondary.lightness",
+    "selector": ":root",
+    "property": "--root-color-background--secondary-lightness"
+  },
+  {
+    "name": "og.color.background.secondary.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color-background--secondary-lightness-dark"
+  },
+  {
+    "name": "og.color.background.secondary.lightness-light",
+    "selector": ":root",
+    "property": "--root-color-background--secondary-lightness-light"
+  },
+  {
+    "name": "og.color.background.secondary.default",
+    "selector": ":root",
+    "property": "--root-color-background--secondary"
+  },
+  {
+    "name": "og.color.background.secondary.dark",
+    "selector": ":root",
+    "property": "--root-color-background--secondary-dark"
+  },
+  {
+    "name": "og.color.background.secondary.light",
+    "selector": ":root",
+    "property": "--root-color-background--secondary-light"
+  },
+  {
+    "name": "og.color.background.support.hue",
+    "selector": ":root",
+    "property": "--root-color-background--support-hue"
+  },
+  {
+    "name": "og.color.background.support.saturation",
+    "selector": ":root",
+    "property": "--root-color-background--support-saturation"
+  },
+  {
+    "name": "og.color.background.support.lightness",
+    "selector": ":root",
+    "property": "--root-color-background--support-lightness"
+  },
+  {
+    "name": "og.color.background.support.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color-background--support-lightness-dark"
+  },
+  {
+    "name": "og.color.background.support.lightness-light",
+    "selector": ":root",
+    "property": "--root-color-background--support-lightness-light"
+  },
+  {
+    "name": "og.color.background.support.default",
+    "selector": ":root",
+    "property": "--root-color-background--support"
+  },
+  {
+    "name": "og.color.background.support.dark",
+    "selector": ":root",
+    "property": "--root-color-background--support-dark"
+  },
+  {
+    "name": "og.color.background.support.light",
+    "selector": ":root",
+    "property": "--root-color-background--support-light"
+  },
+  { "name": "og.color.background.grey.hue", "selector": ":root", "property": "--root-color-background--grey-hue" },
+  {
+    "name": "og.color.background.grey.saturation",
+    "selector": ":root",
+    "property": "--root-color-background--grey-saturation"
+  },
+  {
+    "name": "og.color.background.grey.lightness",
+    "selector": ":root",
+    "property": "--root-color-background--grey-lightness"
+  },
+  {
+    "name": "og.color.background.grey.lightness-dark",
+    "selector": ":root",
+    "property": "--root-color-background--grey-lightness-dark"
+  },
+  {
+    "name": "og.color.background.grey.lightness-light",
+    "selector": ":root",
+    "property": "--root-color-background--grey-lightness-light"
+  },
+  { "name": "og.color.background.grey.default", "selector": ":root", "property": "--root-color-background--grey" },
+  {
+    "name": "og.color.background.grey.dark",
+    "selector": ":root",
+    "property": "--root-color-background--grey-dark"
+  },
+  {
+    "name": "og.color.background.grey.light",
+    "selector": ":root",
+    "property": "--root-color-background--grey-light"
+  },
+  { "name": "og.color.darken-less", "selector": ":root", "property": "--root-color--darken-less" },
+  { "name": "og.color.darken", "selector": ":root", "property": "--root-color--darken" },
+  { "name": "og.color.lighten", "selector": ":root", "property": "--root-color--lighten" },
+  { "name": "og.color.lighten-less", "selector": ":root", "property": "--root-color--lighten-less" },
+  { "name": "og.color.lighten-more", "selector": ":root", "property": "--root-color--lighten-more" },
+
+  {
+    "name": "utrecht.body.line-height",
+    "selector": "body",
+    "property": "line-height"
+  },
+  {
+    "name": "utrecht.body.font-family",
+    "selector": "body",
+    "property": "font-family"
+  },
+  {
+    "name": "basis.border-width.md",
+    "selector": ":root",
+    "property": "--root-border-width"
+  },
+  {
+    "name": "utrecht.body.font-size",
+    "selector": ":root",
+    "property": "--root-font-size"
+  },
+  {
+    "name": "basis.typography.font-family.default",
+    "selector": ":root",
+    "property": "--root-font-family--primary"
+  },
+  {
+    "$comment": "Not an exact mapping",
+    "name": "basis.typography.font-family.heading",
+    "selector": ":root",
+    "property": "--root-font-family--secondary"
+  },
+  {
+    "name": "basis.typography.font-weight.light",
+    "selector": ":root",
+    "property": "--root-font-weight--light"
+  },
+  {
+    "name": "basis.typography.font-weight.normal",
+    "selector": ":root",
+    "property": "--root-font-weight--normal"
+  },
+  {
+    "name": "basis.typography.font-weight.semi-bold",
+    "selector": ":root",
+    "property": "--root-font-weight--semi-bold"
+  },
+  {
+    "name": "basis.typography.font-weight.bold",
+    "selector": ":root",
+    "property": "--root-font-weight--bold"
+  },
+  {
+    "name": "basis.typography.line-height.md",
+    "selector": ":root",
+    "property": "--root-line-height"
+  },
+  {
+    "name": "utrecht.heading-1.color",
+    "selector": ":root",
+    "property": "--root-heading-1-color"
+  },
+  {
+    "name": "utrecht.heading-2.color",
+    "selector": ":root",
+    "property": "--root-heading-2-color"
+  },
+  {
+    "name": "utrecht.heading-3.color",
+    "selector": ":root",
+    "property": "--root-heading-3-color"
+  },
+  {
+    "name": "utrecht.heading-4.color",
+    "selector": ":root",
+    "property": "--root-heading-4-color"
+  },
+  {
+    "name": "todo.heading-1.link.color",
+    "selector": ":root",
+    "property": "--root-heading-1-color-link"
+  },
+  {
+    "name": "todo.heading-2.link.color",
+    "selector": ":root",
+    "property": "--root-heading-2-color-link"
+  },
+  {
+    "name": "todo.heading-3.link.color",
+    "selector": ":root",
+    "property": "--root-heading-3-color-link"
+  },
+  {
+    "name": "todo.heading-4.link.color",
+    "selector": ":root",
+    "property": "--root-heading-4-color-link"
+  },
+  {
+    "name": "todo.heading-1.link.hover.color",
+    "selector": ":root",
+    "property": "--root-heading-1-color-link--hover"
+  },
+  {
+    "name": "todo.heading-2.link.hover.color",
+    "selector": ":root",
+    "property": "--root-heading-2-color-link--hover"
+  },
+  {
+    "name": "todo.heading-3.link.hover.color",
+    "selector": ":root",
+    "property": "--root-heading-3-color-link--hover"
+  },
+  {
+    "name": "todo.heading-4.link.hover.color",
+    "selector": ":root",
+    "property": "--root-heading-4-color-link--hover"
+  },
+  {
+    "name": "utrecht.heading-1.font-family",
+    "selector": ":root",
+    "property": "--root-heading-1-family"
+  },
+  {
+    "name": "utrecht.heading-2.font-family",
+    "selector": ":root",
+    "property": "--root-heading-2-family"
+  },
+  {
+    "name": "utrecht.heading-3.font-family",
+    "selector": ":root",
+    "property": "--root-heading-3-family"
+  },
+  {
+    "name": "utrecht.heading-4.font-family",
+    "selector": ":root",
+    "property": "--root-heading-4-family"
+  },
+  {
+    "name": "utrecht.heading-1.font-size",
+    "selector": ":root",
+    "property": "--root-heading-1-size"
+  },
+  {
+    "name": "utrecht.heading-2.font-size",
+    "selector": ":root",
+    "property": "--root-heading-2-size"
+  },
+  {
+    "name": "utrecht.heading-3.font-size",
+    "selector": ":root",
+    "property": "--root-heading-3-size"
+  },
+  {
+    "name": "utrecht.heading-4.font-size",
+    "selector": ":root",
+    "property": "--root-heading-4-size"
+  },
+
+  {
+    "name": "todo.heading-1.font-style",
+    "selector": ":root",
+    "property": "--root-heading-1-style"
+  },
+  {
+    "name": "todo.heading-2.font-style",
+    "selector": ":root",
+    "property": "--root-heading-2-style"
+  },
+  {
+    "name": "todo.heading-3.font-style",
+    "selector": ":root",
+    "property": "--root-heading-3-style"
+  },
+  {
+    "name": "todo.heading-4.font-style",
+    "selector": ":root",
+    "property": "--root-heading-4-style"
+  },
+  {
+    "name": "utrecht.heading-1.font-weight",
+    "selector": ":root",
+    "property": "--root-heading-1-weight"
+  },
+  {
+    "name": "utrecht.heading-2.font-weight",
+    "selector": ":root",
+    "property": "--root-heading-2-weight"
+  },
+  {
+    "name": "utrecht.heading-3.font-weight",
+    "selector": ":root",
+    "property": "--root-heading-3-weight"
+  },
+  {
+    "name": "utrecht.heading-4.font-weight",
+    "selector": ":root",
+    "property": "--root-heading-4-weight"
+  },
+  {
+    "name": "utrecht.heading-1.line-height",
+    "selector": ":root",
+    "property": "--root-heading-1-line-height"
+  },
+  {
+    "name": "utrecht.heading-2.line-height",
+    "selector": ":root",
+    "property": "--root-heading-2-line-height"
+  },
+  {
+    "name": "utrecht.heading-3.line-height",
+    "selector": ":root",
+    "property": "--root-heading-3-line-height"
+  },
+  {
+    "name": "utrecht.heading-4.line-height",
+    "selector": ":root",
+    "property": "--root-heading-4-line-height"
+  },
+  {
+    "name": "utrecht.heading-1.margin-block-start",
+    "selector": "h1",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.heading-2.margin-block-start",
+    "selector": "h2",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.heading-3.margin-block-start",
+    "selector": "h3",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.heading-4.margin-block-start",
+    "selector": "h4",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.heading-5.margin-block-start",
+    "selector": "h5",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.heading-6.margin-block-start",
+    "selector": "h6",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.separator.margin-block-start",
+    "selector": "hr",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.separator.margin-block-end",
+    "selector": "hr",
+    "property": "margin-end"
+  },
+  {
+    "name": "utrecht.paragraph.lead.color",
+    "selector": ".intro-text",
+    "property": "--color"
+  },
+  {
+    "name": "utrecht.paragraph.lead.font-size",
+    "selector": ".intro-text",
+    "property": "--font-size"
+  },
+  {
+    "name": "utrecht.paragraph.lead.font-weight",
+    "selector": ".intro-text",
+    "property": "--font-weight"
+  },
+  {
+    "name": "utrecht.paragraph.lead.line-height",
+    "selector": ".intro-text",
+    "property": "--line-height"
+  },
+  {
+    "name": "utrecht.heading-2.font-size",
+    "selector": ":root",
+    "property": "--root-heading-2-size"
+  },
+  {
+    "name": "utrecht.heading-3.font-size",
+    "selector": ":root",
+    "property": "--root-heading-3-size"
+  },
+  {
+    "name": "utrecht.heading-4.font-size",
+    "selector": ":root",
+    "property": "--root-heading-4-size"
+  },
+
+  {
+    "name": "utrecht.button.background-color",
+    "selector": ".button",
+    "property": "--background-color"
+  },
+  {
+    "name": "utrecht.button.border-radius",
+    "selector": ".button",
+    "property": "--border-radius"
+  },
+  {
+    "$comment": "Not an exact mapping, but I suspect only the `--border-bottom-width` varies",
+    "name": "utrecht.button.border-width",
+    "selector": ".button",
+    "property": "--border-top-width"
+  },
+  {
+    "$comment": "Not an exact mapping, but I suspect only the `--border-bottom-width` varies",
+    "name": "og.button.border-block-end-width",
+    "selector": ".button",
+    "property": "--border-bottom-width"
+  },
+  {
+    "$comment": "Not an exact mapping",
+    "name": "utrecht.button.border-color",
+    "selector": ".button",
+    "property": "--border-bottom-color"
+  },
+  {
+    "name": "utrecht.button.color",
+    "selector": ".button",
+    "property": "--color"
+  },
+  {
+    "name": "utrecht.button.font-family",
+    "selector": ".button",
+    "property": "--font-family"
+  },
+  {
+    "name": "utrecht.button.min-block-size",
+    "selector": ".button",
+    "property": "--height"
+  },
+  {
+    "name": "utrecht.button.font-size",
+    "selector": ".button__content",
+    "property": "--font-size"
+  },
+  {
+    "name": "utrecht.button.font-weight",
+    "selector": ".button",
+    "property": "--font-weight"
+  },
+  {
+    "name": "utrecht.button.line-height",
+    "selector": ".button",
+    "property": "--line-height"
+  },
+  {
+    "name": "utrecht.button.hover.background-color",
+    "selector": ".button:hover",
+    "property": "--background-color"
+  },
+  {
+    "$comment": "Not an exact mapping",
+    "name": "utrecht.button.hover.border-color",
+    "selector": ".button:hover",
+    "property": "--border-bottom-color"
+  },
+  {
+    "name": "todo.button.primary-action.font-family",
+    "selector": ".button-primary",
+    "property": "--font-family"
+  },
+  {
+    "name": "todo.button.primary-action.font-style",
+    "selector": ".button-primary",
+    "property": "--font-style"
+  },
+  {
+    "name": "todo.button.primary-action.border-radius",
+    "selector": ".button-primary",
+    "property": "--border-radius"
+  },
+  {
+    "name": "utrecht.button.primary-action.background-color",
+    "selector": ".button-primary",
+    "property": "--background-color"
+  },
+  {
+    "$comment": "Not an exact mapping",
+    "name": "utrecht.button.primary-action.border-color",
+    "selector": ".button-primary",
+    "property": "--border-bottom-color"
+  },
+  {
+    "name": "utrecht.button.primary-action.color",
+    "selector": ".button-primary",
+    "property": "--color"
+  },
+  {
+    "name": "utrecht.button.primary-action.font-size",
+    "selector": ".button-primary",
+    "property": "--font-size"
+  },
+  {
+    "name": "utrecht.button.primary-action.font-weight",
+    "selector": ".button-primary",
+    "property": "--font-weight"
+  },
+  {
+    "name": "utrecht.button.primary-action.line-height",
+    "selector": ".button-primary",
+    "property": "--line-height"
+  },
+  {
+    "name": "todo.button.secondary-action.font-family",
+    "selector": ".button-secondary",
+    "property": "--font-family"
+  },
+  {
+    "name": "todo.button.secondary-action.font-style",
+    "selector": ".button-secondary",
+    "property": "--font-style"
+  },
+  {
+    "name": "todo.button.secondary-action.border-radius",
+    "selector": ".button-secondary",
+    "property": "--border-radius"
+  },
+  {
+    "name": "utrecht.button.secondary-action.background-color",
+    "selector": ".button-secondary",
+    "property": "--background-color"
+  },
+  {
+    "$comment": "Not an exact mapping",
+    "name": "utrecht.button.secondary-action.border-color",
+    "selector": ".button-secondary",
+    "property": "--border-bottom-color"
+  },
+  {
+    "name": "utrecht.button.secondary-action.color",
+    "selector": ".button-secondary",
+    "property": "--color"
+  },
+  {
+    "name": "utrecht.button.secondary-action.font-size",
+    "selector": ".button-secondary",
+    "property": "--font-size"
+  },
+  {
+    "name": "utrecht.button.secondary-action.font-weight",
+    "selector": ".button-secondary",
+    "property": "--font-weight"
+  },
+  {
+    "name": "utrecht.button.secondary-action.line-height",
+    "selector": ".button-secondary",
+    "property": "--line-height"
+  },
+  {
+    "name": "utrecht.button.primary-action.hover.background-color",
+    "selector": ".button-primary:hover, .button-primary:focus, .button-primary:active",
+    "property": "--background-color"
+  },
+  {
+    "name": "utrecht.button.primary-action.hover.background-color",
+    "selector": ".button-primary:hover, .button-primary:focus, .button-primary:active",
+    "property": "--background-color"
+  },
+  {
+    "name": "todo.button.primary-action.hover.border-block-start-color",
+    "selector": ".button-primary:hover, .button-primary:focus, .button-primary:active",
+    "property": "--border-bottom-top-color"
+  },
+  {
+    "name": "todo.button.primary-action.hover.border-inline-end-color",
+    "selector": ".button-primary:hover, .button-primary:focus, .button-primary:active",
+    "property": "--border-bottom-right-color"
+  },
+  {
+    "name": "todo.button.primary-action.hover.border-block-end-color",
+    "selector": ".button-primary:hover, .button-primary:focus, .button-primary:active",
+    "property": "--border-bottom-end-color"
+  },
+  {
+    "name": "todo.button.primary-action.hover.border-inline-start-color",
+    "selector": ".button-primary:hover, .button-primary:focus, .button-primary:active",
+    "property": "--border-bottom-left-color"
+  },
+
+  {
+    "$comment": "Not an exact mapping",
+    "name": "utrecht.button.secondary-action.hover.border-color",
+    "selector": ".button-secondary:hover, .button-secondary:focus, .button-secondary:active",
+    "property": "--border-bottom-color"
+  },
+  {
+    "name": "todo.button.secondary-action.hover.border-block-start-color",
+    "selector": ".button-secondary:hover, .button-secondary:focus, .button-secondary:active",
+    "property": "--border-bottom-top-color"
+  },
+  {
+    "name": "todo.button.secondary-action.hover.border-inline-end-color",
+    "selector": ".button-secondary:hover, .button-secondary:focus, .button-secondary:active",
+    "property": "--border-bottom-right-color"
+  },
+  {
+    "name": "todo.button.secondary-action.hover.border-block-end-color",
+    "selector": ".button-secondary:hover, .button-secondary:focus, .button-secondary:active",
+    "property": "--border-bottom-end-color"
+  },
+  {
+    "name": "todo.button.secondary-action.hover.border-inline-start-color",
+    "selector": ".button-secondary:hover, .button-secondary:focus, .button-secondary:active",
+    "property": "--border-bottom-left-color"
+  },
+  {
+    "name": "utrecht.button.secondary-action.hover.background-color",
+    "selector": ".button-secondary:hover, .button-secondary:focus, .button-secondary:active",
+    "property": "--background-color"
+  },
+  {
+    "$comment": "Not an exact mapping",
+    "name": "utrecht.button.secondary-action.hover.border-color",
+    "selector": ".button-secondary:hover, .button-secondary:focus, .button-secondary:active",
+    "property": "--border-bottom-color"
+  },
+  {
+    "name": "basis.page.max-inline-size",
+    "selector": ".flow--frame .flow--content .flow--maximum-width",
+    "property": "max-width"
+  },
+  {
+    "name": "utrecht.page-header.background-color",
+    "selector": ".page-header",
+    "property": "--color-background"
+  },
+  {
+    "name": "utrecht.page-footer.background-color",
+    "selector": ".page-footer",
+    "property": "--color-background"
+  },
+  {
+    "$comment": "Not an exact match",
+    "name": "utrecht.page-footer.color",
+    "selector": ".footer__header",
+    "property": "--color"
+  },
+  {
+    "$comment": "Not an exact match",
+    "name": "utrecht.page-footer.content.color",
+    "selector": ".footer__header",
+    "property": "--color"
+  },
+  {
+    "name": "utrecht.page-footer.content.padding-block-start",
+    "selector": ".page-footer__container",
+    "property": "padding-top"
+  },
+  {
+    "name": "utrecht.page-footer.content.padding-block-end",
+    "selector": ".page-footer__container",
+    "property": "padding-bottom"
+  },
+  {
+    "name": "basis.form-control.padding-block-start",
+    "selector": "input[type=\"text\"]",
+    "property": "padding"
+  },
+  {
+    "name": "basis.form-control.padding-block-end",
+    "selector": "input[type=\"text\"]",
+    "property": "padding"
+  },
+  {
+    "name": "basis.form-control.padding-inline-start",
+    "selector": "input[type=\"text\"]",
+    "property": "padding"
+  },
+  {
+    "name": "basis.form-control.padding-inline-end",
+    "selector": "input[type=\"text\"]",
+    "property": "padding"
+  },
+  {
+    "name": "basis.form-control.max-inline-size",
+    "selector": "input[type=\"text\"]",
+    "property": "max-width"
+  },
+  {
+    "name": "basis.form-control.border-color",
+    "selector": "input[type=\"text\"]",
+    "property": "border-color"
+  },
+  {
+    "name": "basis.form-control.border-width",
+    "selector": "input[type=\"text\"]",
+    "property": "border-width"
+  },
+  {
+    "name": "basis.form-control.background-color",
+    "selector": "input[type=\"text\"]",
+    "property": "background"
+  },
+  {
+    "name": "basis.form-control.read-only.background-color",
+    "selector": "input[type=\"text\"][readonly]",
+    "property": "background-color"
+  },
+  {
+    "name": "basis.form-control.read-only.border-color",
+    "selector": "input[type=\"text\"][readonly]",
+    "property": "border-color"
+  },
+  {
+    "name": "basis.form-control.disabled.background-color",
+    "selector": "input[type=\"text\"]:disabled",
+    "property": "background-color"
+  },
+  {
+    "name": "basis.form-control.disabled.border-color",
+    "selector": "input[type=\"text\"]:disabled",
+    "property": "border-color"
+  },
+  {
+    "name": "og.color.text",
+    "selector": ":root",
+    "property": "--root-color-text"
+  },
+  {
+    "name": "og.color.text-placeholder",
+    "selector": ":root",
+    "property": "--root-color-text-placeholder"
+  },
+  {
+    "name": "og.color.text-link",
+    "selector": ":root",
+    "property": "--root-color-text-link"
+  },
+  {
+    "name": "og.color.text-link-hover",
+    "selector": ":root",
+    "property": "--root-color-text-link--hover"
+  },
+  {
+    "name": "og.color.text-link-disabled",
+    "selector": ":root",
+    "property": "--root-color-text-link--disabled"
+  },
+  {
+    "name": "og.color.interaction",
+    "selector": ":root",
+    "property": "--root-color-interaction"
+  },
+  {
+    "name": "utrecht.link.color",
+    "selector": ":root",
+    "property": "--root-color-text-link"
+  },
+  {
+    "name": "utrecht.link.hover.color",
+    "selector": ":root",
+    "property": "--root-color-text-link--hover"
+  },
+  {
+    "name": "utrecht.link.icon.size",
+    "selector": ".link .icon",
+    "property": "--height"
+  },
+  {
+    "name": "utrecht.link.column-gap",
+    "selector": ".link .icon--after",
+    "property": "margin-left"
+  },
+  {
+    "name": "utrecht.paragraph.margin-block-start",
+    "selector": "p",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.paragraph.margin-block-end",
+    "selector": "p",
+    "property": "margin-bottom"
+  },
+  {
+    "name": "utrecht.unordered-list.margin-block-start",
+    "selector": "ul",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.unordered-list.margin-block-end",
+    "selector": "ul",
+    "property": "margin-bottom"
+  },
+  {
+    "name": "utrecht.ordered-list.margin-block-start",
+    "selector": "ol",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.ordered-list.margin-block-end",
+    "selector": "ol",
+    "property": "margin-bottom"
+  },
+  {
+    "name": "utrecht.blockquote.margin-block-start",
+    "selector": "blockquote[type=\"cite\"]",
+    "property": "margin-top"
+  },
+  {
+    "name": "utrecht.blockquote.margin-block-end",
+    "selector": "blockquote[type=\"cite\"]",
+    "property": "margin-bottom"
+  },
+  {
+    "$comment": "Not an exact mapping",
+    "name": "utrecht.focus.outline-offset",
+    "selector": "input[type=\"text\"]:focus",
+    "property": "outline-offset"
+  },
+  {
+    "name": "utrecht.spotlight-section.border-color",
+    "selector": ".follow-up",
+    "property": "--color-border"
+  },
+  {
+    "name": "utrecht.spotlight-section.border-radius",
+    "selector": ".follow-up",
+    "property": "border-radius"
+  },
+  {
+    "name": "utrecht.spotlight-section.warning.background-color",
+    "selector": ".notification.is-warning",
+    "property": "--color-background"
+  },
+  {
+    "name": "utrecht.spotlight-section.warning.border-color",
+    "selector": ".notification.is-warning",
+    "property": "--color-border"
+  },
+  {
+    "name": "utrecht.spotlight-section.icon.warning.color",
+    "selector": ".notification.is-warning .notification__icon .icon",
+    "property": "--color-icon"
+  },
+  {
+    "name": "utrecht.spotlight-section.ok.background-color",
+    "selector": ".notification.is-success",
+    "property": "--color-background"
+  },
+  {
+    "name": "utrecht.spotlight-section.ok.border-color",
+    "selector": ".notification.is-success",
+    "property": "--color-border"
+  },
+  {
+    "name": "utrecht.spotlight-section.icon.ok.color",
+    "selector": ".notification.is-success .notification__icon .icon",
+    "property": "--color-icon"
+  },
+  {
+    "name": "utrecht.spotlight-section.info.background-color",
+    "selector": ".notification.is-information",
+    "property": "--color-background"
+  },
+  {
+    "name": "utrecht.spotlight-section.info.border-color",
+    "selector": ".notification.is-information",
+    "property": "--color-border"
+  },
+  {
+    "name": "utrecht.spotlight-section.icon.info.color",
+    "selector": ".notification.is-information .notification__icon .icon",
+    "property": "--color-icon"
+  },
+  {
+    "name": "utrecht.spotlight-section.error.background-color",
+    "selector": ".notification.is-alert",
+    "property": "--color-background"
+  },
+  {
+    "name": "utrecht.spotlight-section.error.border-color",
+    "selector": ".notification.is-alert",
+    "property": "--color-border"
+  },
+  {
+    "name": "utrecht.spotlight-section.icon.error.color",
+    "selector": ".notification.is-alert .notification__icon .icon",
+    "property": "--color-icon"
+  },
+  {
+    "$comment": "🆕 Temporary, until there is a new component",
+    "name": "example.text-block.max-inline-size",
+    "selector": ".flow--content",
+    "property": "max-width",
+    "media": "(min-width: 62rem)"
+  },
+  {
+    "name": "utrecht.table.row.alternate-odd.background-color",
+    "selector": ":root",
+    "property": "--root-color-background--table-row-odd"
+  },
+  {
+    "name": "utrecht.table.row.alternate-even.background-color",
+    "selector": ":root",
+    "property": "--root-color-background--table-row-even"
+  },
+  {
+    "name": "utrecht.toptask-link.font-size",
+    "selector": ".top-tasks-tile",
+    "property": "--font-size"
+  },
+  {
+    "name": "og.root-tile.padding",
+    "selector": ":root",
+    "property": "--root-tile-padding"
+  },
+  {
+    "name": "utrecht.toptask-link.padding-block-start",
+    "selector": ".top-tasks-tile",
+    "property": "--padding"
+  },
+  {
+    "name": "utrecht.toptask-link.padding-block-end",
+    "selector": ".top-tasks-tile",
+    "property": "--padding"
+  },
+  {
+    "name": "utrecht.toptask-link.padding-inline-start",
+    "selector": ".top-tasks-tile",
+    "property": "--padding"
+  },
+  {
+    "name": "utrecht.toptask-link.padding-inline-end",
+    "selector": ".top-tasks-tile",
+    "property": "--padding"
+  },
+  {
+    "name": "utrecht.toptask-link.background-color",
+    "selector": ".top-tasks-tile--normal",
+    "property": "--background-color"
+  },
+  {
+    "name": "utrecht.toptask-link.border-width",
+    "selector": ".top-tasks-tile--normal",
+    "property": "--border-width"
+  },
+  {
+    "name": "utrecht.toptask-link.border-color",
+    "selector": ".top-tasks-tile--normal",
+    "property": "--border-color"
+  },
+  {
+    "name": "utrecht.toptask-link.focus.background-color",
+    "selector": ".top-tasks-tile--normal:focus",
+    "property": "--background-color"
+  },
+  {
+    "name": "utrecht.toptask-link.hover.background-color",
+    "selector": ".top-tasks-tile--normal:hover",
+    "property": "--background-color"
+  },
+  {
+    "$comment": "Not an exact mapping",
+    "name": "utrecht.toptask-link.icon.size",
+    "selector": ".top-tasks-tile--normal .top-tasks-tile__icon",
+    "property": "--height"
+  },
+  {
+    "$comment": "Not an exact mapping",
+    "name": "utrecht.toptask-nav.gap",
+    "selector": ".top-tasks-list",
+    "property": "--column-gap"
+  },
+  {
+    "$comment": "This token does not yet exist in the Utrecht component, but might exist in the future. This will become an accurate mapping",
+    "name": "utrecht.toptask-nav.column-gap",
+    "selector": ".top-tasks-list",
+    "property": "--column-gap"
+  },
+  {
+    "$comment": "This token does not yet exist in the Utrecht component, but might exist in the future. This will become an accurate mapping",
+    "name": "utrecht.toptask-nav.row-gap",
+    "selector": ".top-tasks-list",
+    "property": "--row-gap"
+  },
+  {
+    "$comment": "Not an exact mapping",
+    "name": "utrecht.toptask-link.color",
+    "selector": ".top-tasks-tile--normal .top-tasks-tile__header",
+    "property": "--color"
+  },
+  {
+    "name": "utrecht.form-field.invalid.border-inline-start-width",
+    "selector": ".form-element.is-invalid",
+    "property": "border-left-width"
+  },
+  {
+    "name": "utrecht.form-field.invalid.padding-inline",
+    "selector": ".form-element.is-invalid",
+    "property": "padding-left"
+  },
+  {
+    "name": "utrecht.form-field.invalid.border-color",
+    "selector": ".form-element.is-invalid",
+    "property": "--color-border"
+  },
+  {
+    "name": "utrecht.form-field-error-message.color",
+    "selector": ".form-element .invalid-feedback",
+    "property": "--color-text"
+  },
+  {
+    "name": "utrecht.form-field-error-message.font-size",
+    "selector": ".form-element .invalid-feedback",
+    "property": "--font-size"
+  },
+  {
+    "name": "utrecht.form-field-error-message.font-style",
+    "selector": ".form-element .invalid-feedback",
+    "property": "--font-style"
+  },
+  {
+    "name": "utrecht.form-field-error-message.font-weight",
+    "selector": ".form-element .invalid-feedback",
+    "property": "--font-weight"
+  },
+  {
+    "name": "utrecht.form-field-error-message.line-height",
+    "selector": ".form-element .invalid-feedback",
+    "property": "--line-height"
+  }
+]

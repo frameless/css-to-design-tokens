@@ -1,0 +1,317 @@
+/*
+ * Prefer `vi` over `vw` when available.
+ * Like `inline-size` and other logical properties, `vi` is based on the `inline` axis,
+ * instead of making assumptions about the text direction.
+ * The `vi` unit is unfortunately not yet implemented by all evergreen browsers.
+ */
+
+@property --100vw {
+  syntax: "<length>";
+  initial-value: 0px;
+  inherits: true;
+}
+
+@property --100vi {
+  syntax: "<length>";
+  initial-value: 0px;
+  inherits: true;
+}
+
+.basis-theme--fluid {
+  --basis-typography-font-size-min-sm: calc(0.75 * 0.875rem);
+  --basis-typography-font-size-min-md: calc(0.75 * 1rem);
+  --basis-typography-font-size-min-lg: calc(0.75 * 1.25rem);
+  --basis-typography-font-size-min-xl: calc(0.75 * 1.5rem);
+  --basis-typography-font-size-min-2xl: calc(0.75 * 2rem);
+  --basis-typography-font-size-min-3xl: calc(0.75 * 2.5rem);
+  --basis-typography-font-size-min-4xl: calc(0.75 * 3rem);
+  --basis-typography-font-size-max-sm: calc(1.5 * 0.875rem);
+  --basis-typography-font-size-max-md: calc(1.5 * 1rem);
+  --basis-typography-font-size-max-lg: calc(1.5 * 1.25rem);
+  --basis-typography-font-size-max-xl: calc(1.5 * 1.5rem);
+  --basis-typography-font-size-max-2xl: calc(1.5 * 2rem);
+  --basis-typography-font-size-max-3xl: calc(1.5 * 2.5rem);
+  --basis-typography-font-size-max-4xl: calc(1.5 * 3rem);
+
+  --100vw: 100vw;
+  --100vi: 100vi;
+
+  --viewport-sm-inline-size: 320;
+  --viewport-lg-inline-size: 1600;
+  --viewport-size: tan(atan2(var(--100vi, var(--100vw)), 1px));
+  --font-size-scale: calc(
+    (
+        clamp(var(--viewport-sm-inline-size), var(--viewport-size), var(--viewport-lg-inline-size)) -
+          var(--viewport-sm-inline-size)
+      ) /
+      (var(--viewport-lg-inline-size) - var(--viewport-sm-inline-size))
+  );
+
+  /*
+  --basis-typography-min-4xl-font-size: 2.4316rem;
+  --basis-typography-max-4xl-font-size: 4.5776rem;
+  */
+
+  --basis-typography-font-size-sm: calc(
+    var(--basis-typography-font-size-min-sm) +
+      (var(--basis-typography-font-size-max-sm) - var(--basis-typography-font-size-min-sm)) * var(--font-size-scale)
+  );
+
+  --basis-typography-font-size-md: calc(
+    var(--basis-typography-font-size-min-md) +
+      (var(--basis-typography-font-size-max-md) - var(--basis-typography-font-size-min-md)) * var(--font-size-scale)
+  );
+
+  --basis-typography-font-size-lg: calc(
+    var(--basis-typography-font-size-min-lg) +
+      (var(--basis-typography-font-size-max-lg) - var(--basis-typography-font-size-min-lg)) * var(--font-size-scale)
+  );
+
+  --basis-typography-font-size-xl: calc(
+    var(--basis-typography-font-size-min-xl) +
+      (var(--basis-typography-font-size-max-xl) - var(--basis-typography-font-size-min-xl)) * var(--font-size-scale)
+  );
+
+  --basis-typography-font-size-2xl: calc(
+    var(--basis-typography-font-size-min-2xl) +
+      (var(--basis-typography-font-size-max-2xl) - var(--basis-typography-font-size-min-2xl)) * var(--font-size-scale)
+  );
+
+  --basis-typography-font-size-3xl: calc(
+    var(--basis-typography-font-size-min-3xl) +
+      (var(--basis-typography-font-size-max-3xl) - var(--basis-typography-font-size-min-3xl)) * var(--font-size-scale)
+  );
+
+  --basis-typography-font-size-4xl: calc(
+    var(--basis-typography-font-size-min-4xl) +
+      (var(--basis-typography-font-size-max-4xl) - var(--basis-typography-font-size-min-4xl)) * var(--font-size-scale)
+  );
+
+  /* space.inline */
+
+  --basis-space-inline-2xs: calc(
+    var(--basis-space-inline-min-2xs) + (var(--basis-space-inline-max-2xs) - var(--basis-space-inline-min-2xs)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-inline-xs: calc(
+    var(--basis-space-inline-min-xs) + (var(--basis-space-inline-max-xs) - var(--basis-space-inline-min-xs)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-inline-sm: calc(
+    var(--basis-space-inline-min-sm) + (var(--basis-space-inline-max-sm) - var(--basis-space-inline-min-sm)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-inline-md: calc(
+    var(--basis-space-inline-min-md) + (var(--basis-space-inline-max-md) - var(--basis-space-inline-min-md)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-inline-lg: calc(
+    var(--basis-space-inline-min-lg) + (var(--basis-space-inline-max-lg) - var(--basis-space-inline-min-lg)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-inline-xl: calc(
+    var(--basis-space-inline-min-xl) + (var(--basis-space-inline-max-xl) - var(--basis-space-inline-min-xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-inline-2xl: calc(
+    var(--basis-space-inline-min-2xl) + (var(--basis-space-inline-max-2xl) - var(--basis-space-inline-min-2xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-inline-3xl: calc(
+    var(--basis-space-inline-min-3xl) + (var(--basis-space-inline-max-3xl) - var(--basis-space-inline-min-3xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-inline-4xl: calc(
+    var(--basis-space-inline-min-4xl) + (var(--basis-space-inline-max-4xl) - var(--basis-space-inline-min-4xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-inline-5xl: calc(
+    var(--basis-space-inline-min-5xl) + (var(--basis-space-inline-max-5xl) - var(--basis-space-inline-min-5xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-inline-6xl: calc(
+    var(--basis-space-inline-min-6xl) + (var(--basis-space-inline-max-6xl) - var(--basis-space-inline-min-6xl)) *
+      var(--font-size-scale)
+  );
+
+  /* space.block */
+
+  --basis-space-block-2xs: calc(
+    var(--basis-space-block-min-2xs) + (var(--basis-space-block-max-2xs) - var(--basis-space-block-min-2xs)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-block-xs: calc(
+    var(--basis-space-block-min-xs) + (var(--basis-space-block-max-xs) - var(--basis-space-block-min-xs)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-block-sm: calc(
+    var(--basis-space-block-min-sm) + (var(--basis-space-block-max-sm) - var(--basis-space-block-min-sm)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-block-md: calc(
+    var(--basis-space-block-min-md) + (var(--basis-space-block-max-md) - var(--basis-space-block-min-md)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-block-lg: calc(
+    var(--basis-space-block-min-lg) + (var(--basis-space-block-max-lg) - var(--basis-space-block-min-lg)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-block-xl: calc(
+    var(--basis-space-block-min-xl) + (var(--basis-space-block-max-xl) - var(--basis-space-block-min-xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-block-2xl: calc(
+    var(--basis-space-block-min-2xl) + (var(--basis-space-block-max-2xl) - var(--basis-space-block-min-2xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-block-3xl: calc(
+    var(--basis-space-block-min-3xl) + (var(--basis-space-block-max-3xl) - var(--basis-space-block-min-3xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-block-4xl: calc(
+    var(--basis-space-block-min-4xl) + (var(--basis-space-block-max-4xl) - var(--basis-space-block-min-4xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-block-5xl: calc(
+    var(--basis-space-block-min-5xl) + (var(--basis-space-block-max-5xl) - var(--basis-space-block-min-5xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-block-6xl: calc(
+    var(--basis-space-block-min-6xl) + (var(--basis-space-block-max-6xl) - var(--basis-space-block-min-6xl)) *
+      var(--font-size-scale)
+  );
+
+  /* space.column */
+
+  --basis-space-column-2xs: calc(
+    var(--basis-space-column-min-2xs) + (var(--basis-space-column-max-2xs) - var(--basis-space-column-min-2xs)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-column-xs: calc(
+    var(--basis-space-column-min-xs) + (var(--basis-space-column-max-xs) - var(--basis-space-column-min-xs)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-column-sm: calc(
+    var(--basis-space-column-min-sm) + (var(--basis-space-column-max-sm) - var(--basis-space-column-min-sm)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-column-md: calc(
+    var(--basis-space-column-min-md) + (var(--basis-space-column-max-md) - var(--basis-space-column-min-md)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-column-lg: calc(
+    var(--basis-space-column-min-lg) + (var(--basis-space-column-max-lg) - var(--basis-space-column-min-lg)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-column-xl: calc(
+    var(--basis-space-column-min-xl) + (var(--basis-space-column-max-xl) - var(--basis-space-column-min-xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-column-2xl: calc(
+    var(--basis-space-column-min-2xl) + (var(--basis-space-column-max-2xl) - var(--basis-space-column-min-2xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-column-3xl: calc(
+    var(--basis-space-column-min-3xl) + (var(--basis-space-column-max-3xl) - var(--basis-space-column-min-3xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-column-4xl: calc(
+    var(--basis-space-column-min-4xl) + (var(--basis-space-column-max-4xl) - var(--basis-space-column-min-4xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-column-5xl: calc(
+    var(--basis-space-column-min-5xl) + (var(--basis-space-column-max-5xl) - var(--basis-space-column-min-5xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-column-6xl: calc(
+    var(--basis-space-column-min-6xl) + (var(--basis-space-column-max-6xl) - var(--basis-space-column-min-6xl)) *
+      var(--font-size-scale)
+  );
+
+  /* space.row */
+
+  --basis-space-row-2xs: calc(
+    var(--basis-space-row-min-2xs) + (var(--basis-space-row-max-2xs) - var(--basis-space-row-min-2xs)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-row-xs: calc(
+    var(--basis-space-row-min-xs) + (var(--basis-space-row-max-xs) - var(--basis-space-row-min-xs)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-row-sm: calc(
+    var(--basis-space-row-min-sm) + (var(--basis-space-row-max-sm) - var(--basis-space-row-min-sm)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-row-md: calc(
+    var(--basis-space-row-min-md) + (var(--basis-space-row-max-md) - var(--basis-space-row-min-md)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-row-lg: calc(
+    var(--basis-space-row-min-lg) + (var(--basis-space-row-max-lg) - var(--basis-space-row-min-lg)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-row-xl: calc(
+    var(--basis-space-row-min-xl) + (var(--basis-space-row-max-xl) - var(--basis-space-row-min-xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-row-2xl: calc(
+    var(--basis-space-row-min-2xl) + (var(--basis-space-row-max-2xl) - var(--basis-space-row-min-2xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-row-3xl: calc(
+    var(--basis-space-row-min-3xl) + (var(--basis-space-row-max-3xl) - var(--basis-space-row-min-3xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-row-4xl: calc(
+    var(--basis-space-row-min-4xl) + (var(--basis-space-row-max-4xl) - var(--basis-space-row-min-4xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-row-5xl: calc(
+    var(--basis-space-row-min-5xl) + (var(--basis-space-row-max-5xl) - var(--basis-space-row-min-5xl)) *
+      var(--font-size-scale)
+  );
+
+  --basis-space-row-6xl: calc(
+    var(--basis-space-row-min-6xl) + (var(--basis-space-row-max-6xl) - var(--basis-space-row-min-6xl)) *
+      var(--font-size-scale)
+  );
+}

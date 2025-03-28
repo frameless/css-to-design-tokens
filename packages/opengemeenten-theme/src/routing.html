@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="nl" dir="ltr">
+  <head>
+    <title>Routing Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin:ital,wght@0,400..700;1,400..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/@nl-design-system-unstable/basis-design-tokens/dist/theme.css" />
+  </head>
+  <body>
+    <utrecht-breadcrumb-nav class="basis-theme">
+      <ol>
+        <li><a href="https://example.com">Home</a></li>
+        <li><a href="https://example.com/a/">Leven</a></li>
+        <li><a href="https://example.com/a/b/" aria-current="true">Afval</a></li>
+      </ol>
+    </utrecht-breadcrumb-nav>
+    <ol>
+      <li><a href="/" route="/">Home</a></li>
+      <li><a href="/a/" route="/a/">Leven</a></li>
+      <li><a href="/a/b/" route="/a/b/" aria-current="true">Afval</a></li>
+      <li><a href="/fr/" route="/fr/">Français</a></li>
+    </ol>
+    <wc-router>
+      <wc-route path="/src/routing.html" page-title="Default">
+        <template>
+          <h1>Default</h1>
+        </template>
+      </wc-route>
+      <wc-route path="/" page-title="Home">
+        <template>
+          <example-page-title>Home Sweet Home</example-page-title>
+          <h1>Home</h1>
+        </template>
+      </wc-route>
+      <wc-route path="/a/" page-title="Leven">
+        <template>
+          <example-page-title>What a life!</example-page-title>
+          <h1>Leven</h1>
+        </template>
+      </wc-route>
+      <wc-route path="/a/b/" page-title="Afval">
+        <template>
+          <example-page-title>Teenage dirtbag</example-page-title>
+          <h1>Afval</h1>
+        </template>
+      </wc-route>
+      <wc-route path="/fr/">
+        <template>
+          <example-page-title lang="fr">Français</example-page-title>
+          <h1>Français</h1>
+        </template>
+      </wc-route>
+      <wc-outlet></wc-outlet>
+    </wc-router>
+    <script type="module" defer>
+      import './router.js';
+      import { defineUtrechtBreadcrumbNav } from './utrecht-breadcrumb-nav.js';
+      import { defineExamplePageTitle } from './example-page-title.js';
+      defineExamplePageTitle();
+      defineUtrechtBreadcrumbNav();
+    </script>
+    <style>
+      .client-side-routing {
+        outline: 1px solid silver;
+      }
+    </style>
+    <example-page-title>Hello, world</example-page-title>
+  </body>
+</html>
